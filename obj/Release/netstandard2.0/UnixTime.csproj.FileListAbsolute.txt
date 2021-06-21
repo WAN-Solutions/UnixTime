@@ -1,0 +1,9 @@
+K:\Projekte\UnixTime\UnixTime\bin\Release\netstandard2.0\UnixTime.deps.json
+K:\Projekte\UnixTime\UnixTime\bin\Release\netstandard2.0\UnixTime.dll
+K:\Projekte\UnixTime\UnixTime\bin\Release\netstandard2.0\UnixTime.pdb
+K:\Projekte\UnixTime\UnixTime\bin\Release\netstandard2.0\UnixTime.xml
+K:\Projekte\UnixTime\UnixTime\obj\Release\netstandard2.0\UnixTime.AssemblyInfoInputs.cache
+K:\Projekte\UnixTime\UnixTime\obj\Release\netstandard2.0\UnixTime.AssemblyInfo.cs
+K:\Projekte\UnixTime\UnixTime\obj\Release\netstandard2.0\UnixTime.csproj.CoreCompileInputs.cache
+K:\Projekte\UnixTime\UnixTime\obj\Release\netstandard2.0\UnixTime.dll
+K:\Projekte\UnixTime\UnixTime\obj\Release\netstandard2.0\UnixTime.pdb

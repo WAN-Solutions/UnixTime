@@ -1,0 +1,3958 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UnixTime</name>
+    </assembly>
+    <members>
+        <member name="T:wan24.IInt32Value">
+            <summary>
+            Interface for a 32 bit integer value
+            </summary>
+        </member>
+        <member name="P:wan24.IInt32Value.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:wan24.IInt64Value">
+            <summary>
+            Interface for a 64 bit integer value
+            </summary>
+        </member>
+        <member name="P:wan24.IInt64Value.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:wan24.IUInt32Value">
+            <summary>
+            Interface for an unsigned 32 bit integer value
+            </summary>
+        </member>
+        <member name="P:wan24.IUInt32Value.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:wan24.IUInt64Value">
+            <summary>
+            Interface for an unsigned 64 bit integer value
+            </summary>
+        </member>
+        <member name="P:wan24.IUInt64Value.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:wan24.Linux.LongUnixTime">
+            <summary>
+            Unix time
+            
+            The structure represents an Unix timestamp as 64 bit integer.
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.LongUnixTime.RX_NUMBER">
+            <summary>
+            Regular expression to match a 64 bit positive (or zero) integer in a string
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.LongUnixTime.MinValue">
+            <summary>
+            Min. value
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.LongUnixTime.MaxValue">
+            <summary>
+            Max. value
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.LongUnixTime.Seconds">
+            <summary>
+            UTC seconds since 1970-01-01 00:00.00
+            </summary>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.#ctor(System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.#ctor(System.UInt32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.#ctor(System.Int64)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.#ctor(System.UInt64)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="P:wan24.Linux.LongUnixTime.Now">
+            <summary>
+            Now
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.LongUnixTime.Today">
+            <summary>
+            Today
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.LongUnixTime.AsDateTime">
+            <summary>
+            Get as DateTime
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.LongUnixTime.AsDateTimeUtc">
+            <summary>
+            Get as UTC DateTime
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.LongUnixTime.wan24#IInt64Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:wan24.Linux.LongUnixTime.wan24#IUInt64Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.AddSeconds(System.Int64)">
+            <summary>
+            Add seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.AddMinutes(System.Int64)">
+            <summary>
+            Add minutes
+            </summary>
+            <param name="minutes">Minutes</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.AddHours(System.Int64)">
+            <summary>
+            Add hours
+            </summary>
+            <param name="hours">Hours</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.AddDays(System.Int64)">
+            <summary>
+            Add days
+            </summary>
+            <param name="days">Days</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.AddMonths(System.Int32)">
+            <summary>
+            Add months
+            </summary>
+            <param name="months">Months</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.AddYears(System.Int32)">
+            <summary>
+            Add years
+            </summary>
+            <param name="years">Years</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IComparable#CompareTo(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IComparable{System#DateTime}#CompareTo(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IComparable{wan24#IUInt64Value}#CompareTo(wan24.IUInt64Value)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IComparable{System#Int32}#CompareTo(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IComparable{System#UInt32}#CompareTo(System.UInt32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IComparable{System#Int64}#CompareTo(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IComparable{System#UInt64}#CompareTo(System.UInt64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IComparable{System#Double}#CompareTo(System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IEquatable{System#DateTime}#Equals(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IEquatable{wan24#IUInt64Value}#Equals(wan24.IUInt64Value)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IEquatable{System#Int32}#Equals(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IEquatable{System#UInt32}#Equals(System.UInt32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IEquatable{System#Int64}#Equals(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IEquatable{System#UInt64}#Equals(System.UInt64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IEquatable{System#Double}#Equals(System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#GetTypeCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToBoolean(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToChar(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToDateTime(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToDecimal(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToDouble(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToSByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToSingle(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToString(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToType(System.Type,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToUInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToUInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IConvertible#ToUInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#IFormattable#ToString(System.String,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.FromDateTime(System.DateTime)">
+            <summary>
+            Get from DateTime
+            </summary>
+            <param name="dateTime">DateTime</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.FromDateTimeUtc(System.DateTime)">
+            <summary>
+            Get from UTC DateTime
+            </summary>
+            <param name="dateTime">UTC DateTime</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.FromString(System.String)">
+            <summary>
+            Get from a string
+            </summary>
+            <param name="str">String</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.Parse(System.String)">
+            <summary>
+            Parse from a string
+            </summary>
+            <param name="str">String</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.TryParse(System.String,wan24.Linux.LongUnixTime@)">
+            <summary>
+            Try parsing a string
+            </summary>
+            <param name="str">String</param>
+            <param name="unixTime">Unix time</param>
+            <returns>Succeed?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~System.String">
+            <summary>
+            Cast to string
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~System.DateTime">
+            <summary>
+            Cast to DateTime
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~wan24.Linux.UnixTime">
+            <summary>
+            Cast to Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast to Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast to Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~System.Int32">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~System.UInt32">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~System.Int64">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~System.UInt64">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Implicit(wan24.Linux.LongUnixTime)~System.Double">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Explicit(System.DateTime)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast from DateTime
+            </summary>
+            <param name="dateTime">DateTime</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Explicit(System.Int32)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Explicit(System.UInt32)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Explicit(System.Int64)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Explicit(System.UInt64)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Explicit(System.Double)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Explicit(System.String)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast from string
+            </summary>
+            <param name="str">String</param>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Addition(wan24.Linux.LongUnixTime,System.TimeSpan)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Timespan</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Addition(wan24.Linux.LongUnixTime,System.Int32)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Addition(wan24.Linux.LongUnixTime,System.UInt32)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Addition(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Addition(wan24.Linux.LongUnixTime,System.UInt64)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Addition(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,System.TimeSpan)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Timespan</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,System.Int32)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,System.UInt32)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,System.UInt64)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Subtraction(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThan(wan24.Linux.LongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThan(wan24.Linux.LongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThanOrEqual(wan24.Linux.LongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThanOrEqual(wan24.Linux.LongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThan(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThan(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThanOrEqual(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThanOrEqual(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThan(wan24.Linux.LongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThan(wan24.Linux.LongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThanOrEqual(wan24.Linux.LongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThanOrEqual(wan24.Linux.LongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThan(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThan(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThanOrEqual(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThanOrEqual(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThan(wan24.Linux.LongUnixTime,System.Int32)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThan(wan24.Linux.LongUnixTime,System.Int32)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThanOrEqual(wan24.Linux.LongUnixTime,System.Int32)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThanOrEqual(wan24.Linux.LongUnixTime,System.Int32)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThan(wan24.Linux.LongUnixTime,System.UInt32)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThan(wan24.Linux.LongUnixTime,System.UInt32)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThanOrEqual(wan24.Linux.LongUnixTime,System.UInt32)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThanOrEqual(wan24.Linux.LongUnixTime,System.UInt32)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThan(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThan(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThanOrEqual(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThanOrEqual(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThan(wan24.Linux.LongUnixTime,System.UInt64)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThan(wan24.Linux.LongUnixTime,System.UInt64)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThan(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThan(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_GreaterThanOrEqual(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_LessThanOrEqual(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Equality(wan24.Linux.LongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Inequality(wan24.Linux.LongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Equality(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Inequality(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Equality(wan24.Linux.LongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Inequality(wan24.Linux.LongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Equality(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Inequality(wan24.Linux.LongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Equality(wan24.Linux.LongUnixTime,System.Int32)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Inequality(wan24.Linux.LongUnixTime,System.Int32)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Equality(wan24.Linux.LongUnixTime,System.UInt32)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Inequality(wan24.Linux.LongUnixTime,System.UInt32)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Equality(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Inequality(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Equality(wan24.Linux.LongUnixTime,System.UInt64)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Inequality(wan24.Linux.LongUnixTime,System.UInt64)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Equality(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Inequality(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Division(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Divide
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="divisor">Divisor</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Division(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Divide
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="divisor">Divisor</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Multiply(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Multiplicate
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="multiplicator">Multiplicator</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Multiply(wan24.Linux.LongUnixTime,System.Double)">
+            <summary>
+            Multiplicate
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="multiplicator">Multiplicator</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.LongUnixTime.op_Modulus(wan24.Linux.LongUnixTime,System.Int64)">
+            <summary>
+            Modulus
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="modulus">Modulus</param>
+            <returns>Rest</returns>
+        </member>
+        <member name="T:wan24.Linux.UnixTime">
+            <summary>
+            Unix time
+            
+            The structure represents an Unix timestamp as 32 bit integer.
+            
+            Casting from/to several types and most calculation and comparsion operators is/are implemented:
+            
+            <list type="bullet">
+            <item><c>int</c> type</item>
+            <item><c>uint</c> type</item>
+            <item><c>long</c> type</item>
+            <item><c>ulong</c> type</item>
+            <item><c>double</c> type</item>
+            <item><c>DateTime</c> type</item>
+            <item><c>*UnixTime</c> types</item>
+            <item>Addition</item>
+            <item>Substraction</item>
+            <item>Division</item>
+            <item>Multiplication</item>
+            <item>Modulus</item>
+            </list>
+            </summary>
+            <example>
+            These examples show some of the most important possibilities:
+            <code>
+            // Output the numeric Unix timestamp as string
+            UnixTime today = UnixTime.Today;
+            Console.WriteLine(today);
+            
+            // Output the DateTime representation
+            UnixTime tomorrow = today.AddDays(1);
+            Console.WriteLine(tomorrow.AsDateTime);
+            
+            // Calculate a simple substraction
+            TimeSpan diff = tomorrow - today;
+            Console.WriteLine($"From today to tomorrow the time difference is {diff.TotalSeconds} seconds.");
+            
+            // Convert to a DateTime object
+            DateTime todayPlus24h = UnixTime.Now.AddHours(24).AsDateTime;
+            Console.WriteLine($"Today plus 24h is {todayPlus24h}.");
+            </code>
+            </example>
+        </member>
+        <member name="F:wan24.Linux.UnixTime.ONE_MINUTE">
+            <summary>
+            Seconds of one minute
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnixTime.ONE_HOUR">
+            <summary>
+            Seconds of one hour
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnixTime.ONE_DAY">
+            <summary>
+            Seconds of one day
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnixTime.RX_NUMBER">
+            <summary>
+            Regular expression to match a 32 bit positive (or zero) integer in a string
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnixTime.UnixEpoch">
+            <summary>
+            Unix epoch (1970-01-01 00:00.00)
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnixTime.MinValue">
+            <summary>
+            Min. value
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnixTime.MaxValue">
+            <summary>
+            Max. value
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnixTime.Seconds">
+            <summary>
+            UTC seconds since 1970-01-01 00:00.00
+            </summary>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.#ctor(System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.#ctor(System.UInt32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.#ctor(System.Int64)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.#ctor(System.UInt64)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="P:wan24.Linux.UnixTime.Now">
+            <summary>
+            Now
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnixTime.Today">
+            <summary>
+            Today
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnixTime.AsDateTime">
+            <summary>
+            Get as DateTime
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnixTime.AsDateTimeUtc">
+            <summary>
+            Get as UTC DateTime
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnixTime.wan24#IInt32Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:wan24.Linux.UnixTime.wan24#IUInt32Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:wan24.Linux.UnixTime.wan24#IInt64Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:wan24.Linux.UnixTime.wan24#IUInt64Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.AddSeconds(System.Int32)">
+            <summary>
+            Add seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.AddMinutes(System.Int32)">
+            <summary>
+            Add minutes
+            </summary>
+            <param name="minutes">Minutes</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.AddHours(System.Int32)">
+            <summary>
+            Add hours
+            </summary>
+            <param name="hours">Hours</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.AddDays(System.Int32)">
+            <summary>
+            Add days
+            </summary>
+            <param name="days">Days</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.AddMonths(System.Int32)">
+            <summary>
+            Add months
+            </summary>
+            <param name="months">Months</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.AddYears(System.Int32)">
+            <summary>
+            Add years
+            </summary>
+            <param name="years">Years</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IComparable#CompareTo(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IComparable{System#DateTime}#CompareTo(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IComparable{wan24#IUInt64Value}#CompareTo(wan24.IUInt64Value)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IComparable{System#Int32}#CompareTo(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IComparable{System#UInt32}#CompareTo(System.UInt32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IComparable{System#Int64}#CompareTo(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IComparable{System#UInt64}#CompareTo(System.UInt64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IComparable{System#Double}#CompareTo(System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IEquatable{System#DateTime}#Equals(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IEquatable{wan24#IUInt64Value}#Equals(wan24.IUInt64Value)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IEquatable{System#Int32}#Equals(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IEquatable{System#UInt32}#Equals(System.UInt32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IEquatable{System#Int64}#Equals(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IEquatable{System#UInt64}#Equals(System.UInt64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IEquatable{System#Double}#Equals(System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#GetTypeCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToBoolean(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToChar(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToDateTime(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToDecimal(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToDouble(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToSByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToSingle(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToString(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToType(System.Type,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToUInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToUInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IConvertible#ToUInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.System#IFormattable#ToString(System.String,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.FromDateTime(System.DateTime)">
+            <summary>
+            Get from DateTime
+            </summary>
+            <param name="dateTime">DateTime</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.FromDateTimeUtc(System.DateTime)">
+            <summary>
+            Get from UTC DateTime
+            </summary>
+            <param name="dateTime">UTC DateTime</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.FromString(System.String)">
+            <summary>
+            Get from a string
+            </summary>
+            <param name="str">String</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.Parse(System.String)">
+            <summary>
+            Parse from a string
+            </summary>
+            <param name="str">String</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.TryParse(System.String,wan24.Linux.UnixTime@)">
+            <summary>
+            Try parsing a string
+            </summary>
+            <param name="str">String</param>
+            <param name="unixTime">Unix time</param>
+            <returns>Succeed?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~System.String">
+            <summary>
+            Cast to string
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~System.DateTime">
+            <summary>
+            Cast to DateTime
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~System.Int32">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~System.UInt32">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~System.Int64">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~System.UInt64">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~System.Double">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast as Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast as Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Implicit(wan24.Linux.UnixTime)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast as Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Explicit(System.DateTime)~wan24.Linux.UnixTime">
+            <summary>
+            Cast from DateTime
+            </summary>
+            <param name="dateTime">DateTime</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Explicit(System.Int32)~wan24.Linux.UnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Explicit(System.UInt32)~wan24.Linux.UnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Explicit(System.Int64)~wan24.Linux.UnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Explicit(System.UInt64)~wan24.Linux.UnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Explicit(System.Double)~wan24.Linux.UnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Explicit(System.String)~wan24.Linux.UnixTime">
+            <summary>
+            Cast from string
+            </summary>
+            <param name="str">String</param>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Addition(wan24.Linux.UnixTime,System.TimeSpan)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Timespan</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Addition(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Addition(wan24.Linux.UnixTime,System.UInt32)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Addition(wan24.Linux.UnixTime,System.Int64)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Addition(wan24.Linux.UnixTime,System.UInt64)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Addition(wan24.Linux.UnixTime,System.Double)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,System.TimeSpan)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Timespan</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,System.UInt32)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,System.Int64)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,System.UInt64)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Subtraction(wan24.Linux.UnixTime,System.Double)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThan(wan24.Linux.UnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThan(wan24.Linux.UnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThanOrEqual(wan24.Linux.UnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThanOrEqual(wan24.Linux.UnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThan(wan24.Linux.UnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThan(wan24.Linux.UnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThanOrEqual(wan24.Linux.UnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThanOrEqual(wan24.Linux.UnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThan(wan24.Linux.UnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThan(wan24.Linux.UnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThanOrEqual(wan24.Linux.UnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThanOrEqual(wan24.Linux.UnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThan(wan24.Linux.UnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThan(wan24.Linux.UnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThanOrEqual(wan24.Linux.UnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThanOrEqual(wan24.Linux.UnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThan(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThan(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThanOrEqual(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThanOrEqual(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThan(wan24.Linux.UnixTime,System.UInt32)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThan(wan24.Linux.UnixTime,System.UInt32)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThanOrEqual(wan24.Linux.UnixTime,System.UInt32)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThanOrEqual(wan24.Linux.UnixTime,System.UInt32)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThan(wan24.Linux.UnixTime,System.Int64)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThan(wan24.Linux.UnixTime,System.Int64)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThanOrEqual(wan24.Linux.UnixTime,System.Int64)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThanOrEqual(wan24.Linux.UnixTime,System.Int64)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThan(wan24.Linux.UnixTime,System.UInt64)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThan(wan24.Linux.UnixTime,System.UInt64)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThanOrEqual(wan24.Linux.UnixTime,System.UInt64)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThanOrEqual(wan24.Linux.UnixTime,System.UInt64)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThan(wan24.Linux.UnixTime,System.Double)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThan(wan24.Linux.UnixTime,System.Double)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_GreaterThanOrEqual(wan24.Linux.UnixTime,System.Double)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_LessThanOrEqual(wan24.Linux.UnixTime,System.Double)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Equality(wan24.Linux.UnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Inequality(wan24.Linux.UnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Equality(wan24.Linux.UnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Inequality(wan24.Linux.UnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Equality(wan24.Linux.UnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Inequality(wan24.Linux.UnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Equality(wan24.Linux.UnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Inequality(wan24.Linux.UnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Equality(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Inequality(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Equality(wan24.Linux.UnixTime,System.UInt32)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Inequality(wan24.Linux.UnixTime,System.UInt32)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Equality(wan24.Linux.UnixTime,System.Int64)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Inequality(wan24.Linux.UnixTime,System.Int64)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Equality(wan24.Linux.UnixTime,System.UInt64)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Inequality(wan24.Linux.UnixTime,System.UInt64)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Equality(wan24.Linux.UnixTime,System.Double)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Inequality(wan24.Linux.UnixTime,System.Double)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Division(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Divide
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="divider">Divider</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Division(wan24.Linux.UnixTime,System.Single)">
+            <summary>
+            Divide
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="divider">Divider</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Multiply(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Multiplicate
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="multiplicator">Multiplicator</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Multiply(wan24.Linux.UnixTime,System.Single)">
+            <summary>
+            Multiplicate
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="multiplicator">Multiplicator</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnixTime.op_Modulus(wan24.Linux.UnixTime,System.Int32)">
+            <summary>
+            Modulus
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="modulus">Modulus</param>
+            <returns>Rest</returns>
+        </member>
+        <member name="T:wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Unix time
+            
+            The structure represents an Unix timestamp as unsigned 64 bit integer.
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnsignedLongUnixTime.RX_NUMBER">
+            <summary>
+            Regular expression to match a 64 bit unsigned integer in a string
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnsignedLongUnixTime.MinValue">
+            <summary>
+            Min. value
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnsignedLongUnixTime.MaxValue">
+            <summary>
+            Max. value
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnsignedLongUnixTime.Seconds">
+            <summary>
+            UTC seconds since 1970-01-01 00:00.00
+            </summary>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.#ctor(System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.#ctor(System.UInt32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.#ctor(System.Int64)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.#ctor(System.UInt64)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="P:wan24.Linux.UnsignedLongUnixTime.Now">
+            <summary>
+            Now
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnsignedLongUnixTime.Today">
+            <summary>
+            Today
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnsignedLongUnixTime.AsDateTime">
+            <summary>
+            Get as DateTime
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnsignedLongUnixTime.AsDateTimeUtc">
+            <summary>
+            Get as UTC DateTime
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnsignedLongUnixTime.wan24#IUInt64Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.AddSeconds(System.UInt64)">
+            <summary>
+            Add seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.AddMinutes(System.UInt64)">
+            <summary>
+            Add minutes
+            </summary>
+            <param name="minutes">Minutes</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.AddHours(System.UInt64)">
+            <summary>
+            Add hours
+            </summary>
+            <param name="hours">Hours</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.AddDays(System.UInt64)">
+            <summary>
+            Add days
+            </summary>
+            <param name="days">Days</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.AddMonths(System.Int32)">
+            <summary>
+            Add months
+            </summary>
+            <param name="months">Months</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.AddYears(System.Int32)">
+            <summary>
+            Add years
+            </summary>
+            <param name="years">Years</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IComparable#CompareTo(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IComparable{System#DateTime}#CompareTo(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IComparable{wan24#IUInt64Value}#CompareTo(wan24.IUInt64Value)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IComparable{System#Int32}#CompareTo(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IComparable{System#UInt32}#CompareTo(System.UInt32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IComparable{System#Int64}#CompareTo(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IComparable{System#UInt64}#CompareTo(System.UInt64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IComparable{System#Double}#CompareTo(System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IEquatable{System#DateTime}#Equals(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IEquatable{wan24#IUInt64Value}#Equals(wan24.IUInt64Value)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IEquatable{System#Int32}#Equals(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IEquatable{System#UInt32}#Equals(System.UInt32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IEquatable{System#Int64}#Equals(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IEquatable{System#UInt64}#Equals(System.UInt64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IEquatable{System#Double}#Equals(System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#GetTypeCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToBoolean(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToChar(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToDateTime(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToDecimal(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToDouble(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToSByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToSingle(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToString(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToType(System.Type,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToUInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToUInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IConvertible#ToUInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.System#IFormattable#ToString(System.String,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.FromDateTime(System.DateTime)">
+            <summary>
+            Get from DateTime
+            </summary>
+            <param name="dateTime">DateTime</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.FromDateTimeUtc(System.DateTime)">
+            <summary>
+            Get from UTC DateTime
+            </summary>
+            <param name="dateTime">UTC DateTime</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.FromString(System.String)">
+            <summary>
+            Get from a string
+            </summary>
+            <param name="str">String</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.Parse(System.String)">
+            <summary>
+            Parse from a string
+            </summary>
+            <param name="str">String</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.TryParse(System.String,wan24.Linux.UnsignedLongUnixTime@)">
+            <summary>
+            Try parsing a string
+            </summary>
+            <param name="str">String</param>
+            <param name="unixTime">Unix time</param>
+            <returns>Succeed?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~System.String">
+            <summary>
+            Cast to string
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~System.DateTime">
+            <summary>
+            Cast to DateTime
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~wan24.Linux.UnixTime">
+            <summary>
+            Cast to Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast to Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast to Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~System.Int32">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~System.UInt32">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~System.Int64">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~System.UInt64">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Implicit(wan24.Linux.UnsignedLongUnixTime)~System.Double">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Explicit(System.DateTime)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast from DateTime
+            </summary>
+            <param name="dateTime">DateTime</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Explicit(System.Int32)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Explicit(System.UInt32)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Explicit(System.Int64)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Explicit(System.UInt64)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Explicit(System.Double)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Explicit(System.String)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast from string
+            </summary>
+            <param name="str">String</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Addition(wan24.Linux.UnsignedLongUnixTime,System.TimeSpan)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Timespan</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Addition(wan24.Linux.UnsignedLongUnixTime,System.Int32)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Addition(wan24.Linux.UnsignedLongUnixTime,System.UInt32)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Addition(wan24.Linux.UnsignedLongUnixTime,System.Int64)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Addition(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Addition(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,System.TimeSpan)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Timespan</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,System.Int32)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,System.UInt32)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,System.Int64)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Subtraction(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThan(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThan(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThan(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThan(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThan(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThan(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThan(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThan(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThan(wan24.Linux.UnsignedLongUnixTime,System.Int32)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThan(wan24.Linux.UnsignedLongUnixTime,System.Int32)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.Int32)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.Int32)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThan(wan24.Linux.UnsignedLongUnixTime,System.UInt32)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThan(wan24.Linux.UnsignedLongUnixTime,System.UInt32)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.UInt32)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.UInt32)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThan(wan24.Linux.UnsignedLongUnixTime,System.Int64)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThan(wan24.Linux.UnsignedLongUnixTime,System.Int64)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.Int64)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.Int64)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThan(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThan(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThan(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThan(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Equality(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Inequality(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Equality(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Inequality(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Equality(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Inequality(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Equality(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Inequality(wan24.Linux.UnsignedLongUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Equality(wan24.Linux.UnsignedLongUnixTime,System.Int32)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Inequality(wan24.Linux.UnsignedLongUnixTime,System.Int32)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Equality(wan24.Linux.UnsignedLongUnixTime,System.UInt32)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Inequality(wan24.Linux.UnsignedLongUnixTime,System.UInt32)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Equality(wan24.Linux.UnsignedLongUnixTime,System.Int64)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Inequality(wan24.Linux.UnsignedLongUnixTime,System.Int64)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Equality(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Inequality(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Equality(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Inequality(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Division(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Divide
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="divisor">Divisor</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Division(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Divide
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="divisor">Divisor</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Multiply(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Multiplicate
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="multiplicator">Multiplicator</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Multiply(wan24.Linux.UnsignedLongUnixTime,System.Double)">
+            <summary>
+            Multiplicate
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="multiplicator">Multiplicator</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedLongUnixTime.op_Modulus(wan24.Linux.UnsignedLongUnixTime,System.UInt64)">
+            <summary>
+            Modulus
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="modulus">Modulus</param>
+            <returns>Rest</returns>
+        </member>
+        <member name="T:wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Unix time
+            
+            The structure represents an Unix timestamp as unsigned 32 bit integer.
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnsignedUnixTime.RX_NUMBER">
+            <summary>
+            Regular expression to match a 32 bit unsigned integer in a string
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnsignedUnixTime.MinValue">
+            <summary>
+            Min. value
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnsignedUnixTime.MaxValue">
+            <summary>
+            Max. value
+            </summary>
+        </member>
+        <member name="F:wan24.Linux.UnsignedUnixTime.Seconds">
+            <summary>
+            UTC seconds since 1970-01-01 00:00.00
+            </summary>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.#ctor(System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.#ctor(System.UInt32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.#ctor(System.Int64)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.#ctor(System.UInt64)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seconds">UTC seconds since 1970-01-01 00:00.00</param>
+        </member>
+        <member name="P:wan24.Linux.UnsignedUnixTime.Now">
+            <summary>
+            Now
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnsignedUnixTime.Today">
+            <summary>
+            Today
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnsignedUnixTime.AsDateTime">
+            <summary>
+            Get as DateTime
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnsignedUnixTime.AsDateTimeUtc">
+            <summary>
+            Get as UTC DateTime
+            </summary>
+        </member>
+        <member name="P:wan24.Linux.UnsignedUnixTime.wan24#IUInt32Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:wan24.Linux.UnsignedUnixTime.wan24#IInt64Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:wan24.Linux.UnsignedUnixTime.wan24#IUInt64Value#Value">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.AddSeconds(System.UInt32)">
+            <summary>
+            Add seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.AddMinutes(System.UInt32)">
+            <summary>
+            Add minutes
+            </summary>
+            <param name="minutes">Minutes</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.AddHours(System.UInt32)">
+            <summary>
+            Add hours
+            </summary>
+            <param name="hours">Hours</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.AddDays(System.UInt32)">
+            <summary>
+            Add days
+            </summary>
+            <param name="days">Days</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.AddMonths(System.Int32)">
+            <summary>
+            Add months
+            </summary>
+            <param name="months">Months</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.AddYears(System.Int32)">
+            <summary>
+            Add years
+            </summary>
+            <param name="years">Years</param>
+            <returns>New Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IComparable#CompareTo(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IComparable{System#DateTime}#CompareTo(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IComparable{wan24#IUInt64Value}#CompareTo(wan24.IUInt64Value)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IComparable{System#Int32}#CompareTo(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IComparable{System#UInt32}#CompareTo(System.UInt32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IComparable{System#Int64}#CompareTo(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IComparable{System#UInt64}#CompareTo(System.UInt64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IComparable{System#Double}#CompareTo(System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IEquatable{wan24#IUInt64Value}#Equals(wan24.IUInt64Value)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IEquatable{System#DateTime}#Equals(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IEquatable{System#Int32}#Equals(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IEquatable{System#UInt32}#Equals(System.UInt32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IEquatable{System#Int64}#Equals(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IEquatable{System#UInt64}#Equals(System.UInt64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IEquatable{System#Double}#Equals(System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#GetTypeCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToBoolean(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToChar(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToDateTime(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToDecimal(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToDouble(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToSByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToSingle(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToString(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToType(System.Type,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToUInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToUInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IConvertible#ToUInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.System#IFormattable#ToString(System.String,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.FromDateTime(System.DateTime)">
+            <summary>
+            Get from DateTime
+            </summary>
+            <param name="dateTime">DateTime</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.FromDateTimeUtc(System.DateTime)">
+            <summary>
+            Get from UTC DateTime
+            </summary>
+            <param name="dateTime">UTC DateTime</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.FromString(System.String)">
+            <summary>
+            Get from a string
+            </summary>
+            <param name="str">String</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.Parse(System.String)">
+            <summary>
+            Parse from a string
+            </summary>
+            <param name="str">String</param>
+            <returns>Unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.TryParse(System.String,wan24.Linux.UnsignedUnixTime@)">
+            <summary>
+            Try parsing a string
+            </summary>
+            <param name="str">String</param>
+            <param name="unixTime">Unix time</param>
+            <returns>Succeed?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~System.String">
+            <summary>
+            Cast to string
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~System.DateTime">
+            <summary>
+            Cast to DateTime
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~System.Int32">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~System.UInt32">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~System.Int64">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~System.UInt64">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~System.Double">
+            <summary>
+            Cast as integer
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~wan24.Linux.UnixTime">
+            <summary>
+            Cast as Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~wan24.Linux.LongUnixTime">
+            <summary>
+            Cast as Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Implicit(wan24.Linux.UnsignedUnixTime)~wan24.Linux.UnsignedLongUnixTime">
+            <summary>
+            Cast as Unix time
+            </summary>
+            <param name="unixTime">Unix time</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Explicit(System.DateTime)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast from DateTime
+            </summary>
+            <param name="dateTime">DateTime</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Explicit(System.Int32)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Explicit(System.UInt32)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Explicit(System.Int64)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Explicit(System.UInt64)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Explicit(System.Double)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast from seconds
+            </summary>
+            <param name="seconds">Seconds</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Explicit(System.String)~wan24.Linux.UnsignedUnixTime">
+            <summary>
+            Cast from string
+            </summary>
+            <param name="str">String</param>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Addition(wan24.Linux.UnsignedUnixTime,System.TimeSpan)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Timespan</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Addition(wan24.Linux.UnsignedUnixTime,System.Int32)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Addition(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Addition(wan24.Linux.UnsignedUnixTime,System.Int64)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Addition(wan24.Linux.UnsignedUnixTime,System.UInt64)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Addition(wan24.Linux.UnsignedUnixTime,System.Double)">
+            <summary>
+            Summarize
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Timespan</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,System.TimeSpan)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Timespan</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,System.Int32)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,System.Int64)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,System.UInt64)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Subtraction(wan24.Linux.UnsignedUnixTime,System.Double)">
+            <summary>
+            Substract
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThan(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThan(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThan(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThan(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThan(wan24.Linux.UnsignedUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThan(wan24.Linux.UnsignedUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThan(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThan(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThan(wan24.Linux.UnsignedUnixTime,System.Int32)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThan(wan24.Linux.UnsignedUnixTime,System.Int32)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedUnixTime,System.Int32)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedUnixTime,System.Int32)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThan(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThan(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThan(wan24.Linux.UnsignedUnixTime,System.Int64)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThan(wan24.Linux.UnsignedUnixTime,System.Int64)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedUnixTime,System.Int64)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedUnixTime,System.Int64)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThan(wan24.Linux.UnsignedUnixTime,System.UInt64)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThan(wan24.Linux.UnsignedUnixTime,System.UInt64)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedUnixTime,System.UInt64)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedUnixTime,System.UInt64)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThan(wan24.Linux.UnsignedUnixTime,System.Double)">
+            <summary>
+            Determine if greater than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThan(wan24.Linux.UnsignedUnixTime,System.Double)">
+            <summary>
+            Determine if lower than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_GreaterThanOrEqual(wan24.Linux.UnsignedUnixTime,System.Double)">
+            <summary>
+            Determine if greater than or equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Greater than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_LessThanOrEqual(wan24.Linux.UnsignedUnixTime,System.Double)">
+            <summary>
+            Determine if lower than
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Lower than?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Equality(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Inequality(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Equality(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Inequality(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Equality(wan24.Linux.UnsignedUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Inequality(wan24.Linux.UnsignedUnixTime,wan24.Linux.LongUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Equality(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Inequality(wan24.Linux.UnsignedUnixTime,wan24.Linux.UnsignedLongUnixTime)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Unix time B</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Equality(wan24.Linux.UnsignedUnixTime,System.Int32)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Inequality(wan24.Linux.UnsignedUnixTime,System.Int32)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Equality(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Inequality(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Equality(wan24.Linux.UnsignedUnixTime,System.Int64)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Inequality(wan24.Linux.UnsignedUnixTime,System.Int64)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Equality(wan24.Linux.UnsignedUnixTime,System.UInt64)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Inequality(wan24.Linux.UnsignedUnixTime,System.UInt64)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Equality(wan24.Linux.UnsignedUnixTime,System.Double)">
+            <summary>
+            Determine if equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Inequality(wan24.Linux.UnsignedUnixTime,System.Double)">
+            <summary>
+            Determine if not equal
+            </summary>
+            <param name="a">Unix time A</param>
+            <param name="b">Seconds</param>
+            <returns>Is not equal?</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Division(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Divide
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="divider">Divider</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Division(wan24.Linux.UnsignedUnixTime,System.Single)">
+            <summary>
+            Divide
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="divider">Divider</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Multiply(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Multiplicate
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="multiplicator">Multiplicator</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Multiply(wan24.Linux.UnsignedUnixTime,System.Single)">
+            <summary>
+            Multiplicate
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="multiplicator">Multiplicator</param>
+            <returns>New unix time</returns>
+        </member>
+        <member name="M:wan24.Linux.UnsignedUnixTime.op_Modulus(wan24.Linux.UnsignedUnixTime,System.UInt32)">
+            <summary>
+            Modulus
+            </summary>
+            <param name="unixTime">Unix time</param>
+            <param name="modulus">Modulus</param>
+            <returns>Rest</returns>
+        </member>
+    </members>
+</doc>

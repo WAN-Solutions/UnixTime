@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnixTime", "UnixTime.csproj", "{39A0D838-C204-42F9-AF4D-43AD87A6CC2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnixTime Tests", "..\UnixTime Tests\UnixTime Tests.csproj", "{C1465B73-BF6C-4632-A3DB-D852BFCC74B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39A0D838-C204-42F9-AF4D-43AD87A6CC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A0D838-C204-42F9-AF4D-43AD87A6CC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A0D838-C204-42F9-AF4D-43AD87A6CC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A0D838-C204-42F9-AF4D-43AD87A6CC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1465B73-BF6C-4632-A3DB-D852BFCC74B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1465B73-BF6C-4632-A3DB-D852BFCC74B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1465B73-BF6C-4632-A3DB-D852BFCC74B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1465B73-BF6C-4632-A3DB-D852BFCC74B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1492A59C-7A32-41FC-BDE9-1FF1FFAEFCBC}
+	EndGlobalSection
+EndGlobal

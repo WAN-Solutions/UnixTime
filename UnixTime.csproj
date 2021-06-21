@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>wan24.Linux</RootNamespace>
+    <Version>0.0.0</Version>
+    <Authors>Andreas Zimmermann</Authors>
+    <Company>WAN Solutions, Andreas Zimmermann</Company>
+    <Copyright>(c)2021 Andreas Zimmermann, WAN Solutions</Copyright>
+    <PackageLicenseExpression>MIT License</PackageLicenseExpression>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Unix time structure for .NET applications that allows casting from/in several types and supports some math.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>K:\Projekte\UnixTime\UnixTime\UnixTime.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <DocumentationFile>K:\Projekte\UnixTime\UnixTime\UnixTime.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
